@@ -4,9 +4,13 @@
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
-        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="Montserrat-Medium.otf">
+            <string>Montserrat-Medium</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--View Controller-->
         <scene sceneID="EHf-IW-A2E">
@@ -17,16 +21,31 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="launch_image" translatesAutoresizingMaskIntoConstraints="NO" id="Emo-Db-7QN">
-                                <rect key="frame" x="104" y="331" width="206" height="189"/>
+                                <rect key="frame" x="63" y="319" width="288" height="264"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="288" id="3Hc-Bd-VV0"/>
+                                    <constraint firstAttribute="height" constant="264" id="OzQ-qg-90e"/>
+                                </constraints>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" alpha="0.5" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Flix" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fRH-iA-8bC">
+                                <rect key="frame" x="-136.5" y="107" width="687" height="455"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="455" id="Zyf-DT-a29"/>
+                                    <constraint firstAttribute="width" constant="687" id="xyj-TR-AxP"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Montserrat-Medium" family="Montserrat" pointSize="283"/>
+                                <color key="textColor" red="1" green="0.65658555529999996" blue="0.66203481490000005" alpha="0.84705882349999995" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" red="0.087689153850000007" green="0.092565007510000005" blue="0.1325286031" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Emo-Db-7QN" secondAttribute="bottom" constant="342" id="8I8-eT-347"/>
-                            <constraint firstItem="Emo-Db-7QN" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="287" id="JeE-ih-p1C"/>
-                            <constraint firstItem="Emo-Db-7QN" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="104" id="apn-ls-6qf"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Emo-Db-7QN" secondAttribute="trailing" constant="104" id="sUG-XQ-PiS"/>
+                            <constraint firstItem="fRH-iA-8bC" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="1il-Ku-N9v"/>
+                            <constraint firstItem="Emo-Db-7QN" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="275" id="MpJ-aN-jeQ"/>
+                            <constraint firstItem="Emo-Db-7QN" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="uXq-hl-ZeR"/>
+                            <constraint firstItem="fRH-iA-8bC" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="63" id="ubI-HJ-dDT"/>
                         </constraints>
                     </view>
                 </viewController>
@@ -37,8 +56,5 @@
     </scenes>
     <resources>
         <image name="launch_image" width="138" height="139"/>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
     </resources>
 </document>
